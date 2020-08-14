@@ -18,7 +18,7 @@ const port = process.env.PORT || 4000
 app.use(bodyParser.json())
 
 app.get('/', (req, res) => {
-  res.send('Welcome to the Unsplash Chatbot for Zoom! Please install this bot in your class chat. Have students enter "next" when they wish to vote on another question. Enter slash teacherview at the end of this url to view the results of question entering and voting. Please note that simply pressing the voting buttons will not lead to a response from the chatbot on the chat')
+  res.send('Welcome to the Unsplash Chatbot for Zoom! Please install this bot in your class chat. Have students enter "next" when they wish to vote on another question. Enter slash teacherview at the end of this url to view the results of question entering and voting. Please note that simply pressing the voting buttons will not lead to a response from the chatbot on the chat; one must type in a question or next to get a response')
   
 })
 
@@ -42,7 +42,7 @@ app.get('/privacy', (req, res) => {
 })
 
 app.get('/terms', (req, res) => {
-  res.send('By installing the Unsplash Chatbot for Zoom, you are accept and agree to these terms...')
+  res.send('By installing the Unsplash Chatbot for Zoom, you are accept and agree to the Zoom.us terms and conditions')
 })
 
 
